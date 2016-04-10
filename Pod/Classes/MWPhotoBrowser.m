@@ -623,7 +623,10 @@ static void * MWVideoPlayerObservation = &MWVideoPlayerObservation;
         [self performLayout];
         [self.view setNeedsLayout];
     }
-    
+    // ishaan change
+    if (_gridController) {
+        [_gridController.collectionView reloadData];
+    }
 }
 
 - (NSUInteger)numberOfPhotos {
