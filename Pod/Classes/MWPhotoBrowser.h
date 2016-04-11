@@ -72,4 +72,8 @@
 - (void)showNextPhotoAnimated:(BOOL)animated;
 - (void)showPreviousPhotoAnimated:(BOOL)animated;
 
+//custom show hide grid override
+- (void)showGrid:(BOOL)animated;
+- (void)hideGrid;
+
 @end
